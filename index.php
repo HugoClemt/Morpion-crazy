@@ -50,5 +50,6 @@
             </div>
       </div>
     </div>
+    <script src="tic.js"></script>
   </body>
 </html>
