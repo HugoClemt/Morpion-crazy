@@ -33,21 +33,21 @@
         </div>
       </div>
       <div class="row quadrillage">
-        <div class="col">
-          <input type="text" id="case-1" />
-          <input type="text" id="case-2" />
-          <input type="text" id="case-3" />
-        </div>
-        <div class="col">
-          <input type="text" id="case-4" />
-          <input type="text" id="case-5" />
-          <input type="text" id="case-6" />
-        </div>
-        <div class="col">
-          <input type="text" id="case-7" />
-          <input type="text" id="case-9" />
-          <input type="text" id="case-10" />
-        </div>
+      <div class="col">
+                <input type="text" id="0" onclick="exec(cases[0]);" readonly>
+                <input type="text" id="1" onclick="exec(cases[1]);" readonly>
+                <input type="text" id="2" onclick="exec(cases[2])" readonly>
+            </div>
+            <div class="col">
+                <input type="text" id="3" onclick="exec(cases[3]);" readonly>
+                <input type="text" id="4" onclick="exec(cases[4]);" readonly>
+                <input type="text" id="5" onclick="exec(cases[5]);" readonly>
+            </div>
+            <div class="col">
+                <input type="text" id="6" onclick="exec(cases[6]);" readonly>
+                <input type="text" id="7" onclick="exec(cases[7]);" readonly>
+                <input type="text" id="8" onclick="exec(cases[8]);" readonly>
+            </div>
       </div>
     </div>
   </body>
