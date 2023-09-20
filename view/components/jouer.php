@@ -1,3 +1,3 @@
-<di>
-    <button>Jouer</button>
-</di>
+<div>
+    <button id="jouerButton">Jouer</button>
+</div>
