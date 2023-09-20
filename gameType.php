@@ -30,12 +30,11 @@
             </div>
         </div>
 
-        <form label="infoMulti" method="post" action="multi.php">
+        <form label="infoMulti" method="post" action="export_name.php">
             <div class="collapse" id="modalMulti">
                 <div class="card card-body">
                     <input type="text" name="pseudoMulti1" id="pseudoMulti1" placeholder="Entrez le premier pseudo">
                     <input type="text" name="pseudoMulti2" id="pseudoMulti2" placeholder="Entrez le second pseudo">
-
                 </div>
             <button class="btn btn-primary" type="submit" >Jouer</button>
         </form>

@@ -1,8 +1,8 @@
 "use strict";
 
 //Rectifier l'affichage de la modal
-
 // TODO
+
 //On intialise l'état à 0, il changera à chaque clic sur une case
 var state = 0;
 
@@ -57,8 +57,6 @@ function exec(casee) {
         || cases[2].value == 'X' && cases[4].value == 'X' && cases[6].value == 'X') {
         console.log("Le joueur X a gagné");
         showModal();
-
-
     }
 
     //On teste si O a gagné
