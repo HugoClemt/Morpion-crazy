@@ -1,8 +1,8 @@
 "use strict";
 
 //Rectifier l'affichage de la modal
-
 // TODO
+
 //On intialise l'état à 0, il changera à chaque clic sur une case
 var state = 0;
 
