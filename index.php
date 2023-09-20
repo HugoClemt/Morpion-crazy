@@ -15,18 +15,6 @@
   $page = isset($_GET['page']) ? $_GET['page'] : 'template-page';
 
   switch ($page) {
-    case 'demo-grille':
-      include './view/components/demo-grille.php';
-      break;
-    case 'classement':
-      include './view/components/classement.php';
-      break;
-    case 'jouer':
-      include './view/components/jouer.php';
-      break;
-    case 'mode-jeux':
-      include './view/components/mode-jeux.php';
-      break;
     case 'template-page':
       include './view/template/template-page.php';
       break;
