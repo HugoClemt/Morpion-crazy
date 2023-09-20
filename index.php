@@ -5,45 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Morpion Crazy - DEV</title>
-  <!-- <link rel="stylesheet" type="text/css" href="./css/main.css" /> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
   <link href="./config/cnx.php" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+<main>
+  <?php
+  $page = isset($_GET['page']) ? $_GET['page'] : 'template-page';
 
-<body>
-  <div class="container">
-    <div class="row">
-      <h1>Morpion</h1>
-      <div class="col">
-        <button><a href="./gameType.php">Jouer !</a></button>
-      </div>
-      <div class="col">
-        <?php
-        include_once("./controller/hight_score.php");
+  switch ($page) {
+    case 'template-page':
+      include './view/template/template-page.php';
+      break;
+  }
 
-        hight_score($hight_score);
-        ?>
-      </div>
-    </div>
-    <div class="row quadrillage">
-      <div class="col">
-        <input class="case" type="text" id="0" onclick="exec(cases[0]);" readonly>
-        <input class="case" type="text" id="1" onclick="exec(cases[1]);" readonly>
-        <input class="case" type="text" id="2" onclick="exec(cases[2])" readonly>
-      </div>
-      <div class="col">
-        <input class="case" type="text" id="3" onclick="exec(cases[3]);" readonly>
-        <input class="case" type="text" id="4" onclick="exec(cases[4]);" readonly>
-        <input class="case" type="text" id="5" onclick="exec(cases[5]);" readonly>
-      </div>
-      <div class="col">
-        <input class="case" type="text" id="6" onclick="exec(cases[6]);" readonly>
-        <input class="case" type="text" id="7" onclick="exec(cases[7]);" readonly>
-        <input class="case" type="text" id="8" onclick="exec(cases[8]);" readonly>
-      </div>
-    </div>
-  </div>
-  <script src="tic.js"></script>
-</body>
+  ?>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</main>
 
 </html>

@@ -12,58 +12,47 @@ body {
     border: 0;
 }
 
-// #0 {
-//     border-right: 2px solid $body-color;
-//     border-bottom: 2px solid $body-color;
-// }
-
-// #1 {
-//     border-bottom: 2px solid $body-color;
-// }
-
-// #2 {
-//     border-left: 2px solid $body-color;
-//     border-bottom: 2px solid $body-color;
-// }
-
-// #3 {
-//     border-right: 2px solid $body-color;
-//     border-bottom: 2px solid $body-color;
-// }
-
-// #4 {
-//     // border-right: 2px solid $body-color;
-//     // border-bottom: 2px solid $body-color;
-// }
-
-// #5 {
-//     border-left: 2px solid $body-color;
-//     border-bottom: 2px solid $body-color;
-// }
-
-// #6 {
-//     border-right: 2px solid $body-color;
-// }
-
-// #7 {
-//     border-top: 2px solid $body-color;
-// }
-
-// #8 {
-//     border-left: 2px solid $body-color;
-// }
-
-.aaa {
-    background-color: red;
-
-    .titlebbb,
-    .titleaaa {
-        color: green;
-
-        &:active,
-        &:hover {
-            color: magenta;
-        }
-    }
+#case-0 {
+    border-right: 2px solid $body-color;
+    border-bottom: 2px solid $body-color;
 }
 
+#case-1 {
+    border-bottom: 2px solid $body-color;
+}
+
+#case-2 {
+    border-left: 2px solid $body-color;
+    border-bottom: 2px solid $body-color;
+}
+
+#case-3 {
+    border-right: 2px solid $body-color;
+    border-bottom: 2px solid $body-color;
+}
+
+#case-5 {
+    border-left: 2px solid $body-color;
+    border-bottom: 2px solid $body-color;
+}
+
+#case-6 {
+    border-right: 2px solid $body-color;
+}
+
+#case-7 {
+    border-top: 2px solid $body-color;
+}
+
+#case-8 {
+    border-left: 2px solid $body-color;
+}
+
+
+.div.col-6.block-left-top{
+    width: 50%;
+}
+
+.div.col-6.block-left-bottom{
+    width: 50%;
+}
