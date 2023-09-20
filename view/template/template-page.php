@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-6">
-        <div class="row">
-            <div class="col block-left-top" id="modeJeuxContainer">
+        <div class="row" id="block-left-top">
+            <div class="col" id="modeJeuxContainer">
                 <?php
                 $page = isset($_GET['page']) ? $_GET['page'] : 'jouer';
 
@@ -16,8 +16,8 @@
                 ?>
             </div>
         </div>
-        <div class="row">
-            <div class="col block-left-bottom">
+        <div class="row" id="block-left-bottom">
+            <div class="col">
                 <?php
                 include('./view/components/classement.php');
                 ?>

@@ -49,10 +49,21 @@ body {
 }
 
 
-.div.col-6.block-left-top{
-    width: 50%;
+#block-left-top {
+    margin-top: 20%;
+    margin-left: 25%;
+  }
+
+#jouerButton{
+    background-color: orange;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 20%;
+    color: white;
+    font-size: 2rem;
 }
 
-.div.col-6.block-left-bottom{
-    width: 50%;
+#block-left-bottom{
+    margin-top: 20%;
+    margin-left: 25%;
 }
