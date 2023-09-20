@@ -1,5 +1,8 @@
 "use strict";
 
+//Rectifier l'affichage de la modal
+
+// TODO
 //On intialise l'état à 0, il changera à chaque clic sur une case
 var state = 0;
 
@@ -8,10 +11,12 @@ let d1, d2, d3, d4, d5, d6, d7, d8, d9;
 let cases = [d1, d2, d3, d4, d5, d6, d7, d8, d9];
 
 //On boucle sur le tableau pour associer chaque var à son id
-for (let o=0; o<cases.length; o++) {
+for (let o = 0; o < cases.length; o++) {
     cases[o] = document.getElementById(o);
 }
 
+// let modal = document.getElementById(exampleModal);
+// let modall = document.querySelector("#exampleModal");
 //console.log(cases[0]);
 /** 
 var c1, c2, c3, c4, c5, c6, c7, c8, c9;
@@ -42,22 +47,43 @@ function exec(casee) {
 
     //On vient tester toutes les possibilités de victoire 
     //On teste si X a gagné
-    if (cases[0].value == 'X' && cases[1].value == 'X' && cases[2].value == 'X') {
+    if (cases[0].value == 'X' && cases[1].value == 'X' && cases[2].value == 'X'
+        || cases[3].value == 'X' && cases[4].value == 'X' && cases[5].value == 'X'
+        || cases[6].value == 'X' && cases[7].value == 'X' && cases[8].value == 'X'
+        || cases[0].value == 'X' && cases[3].value == 'X' && cases[6].value == 'X'
+        || cases[1].value == 'X' && cases[4].value == 'X' && cases[7].value == 'X'
+        || cases[2].value == 'X' && cases[5].value == 'X' && cases[8].value == 'X'
+        || cases[0].value == 'X' && cases[4].value == 'X' && cases[8].value == 'X'
+        || cases[2].value == 'X' && cases[4].value == 'X' && cases[6].value == 'X') {
         console.log("Le joueur X a gagné");
+        showModal();
+
+
     }
 
     //On teste si O a gagné
-    else if (cases[0].value == 'O' && cases[1].value == 'O' && cases[2].value == 'O') {
+    else if (cases[0].value == 'O' && cases[1].value == 'O' && cases[2].value == 'O'
+    || cases[3].value == 'O' && cases[4].value == 'O' && cases[5].value == 'O'
+    || cases[6].value == 'O' && cases[7].value == 'O' && cases[8].value == 'O'
+    || cases[0].value == 'O' && cases[3].value == 'O' && cases[6].value == 'O'
+    || cases[1].value == 'O' && cases[4].value == 'O' && cases[7].value == 'O'
+    || cases[2].value == 'O' && cases[5].value == 'O' && cases[8].value == 'O'
+    || cases[0].value == 'O' && cases[4].value == 'O' && cases[8].value == 'O'
+    || cases[2].value == 'O' && cases[4].value == 'O' && cases[6].value == 'O') {
         console.log("Le joueur O a gagné");
     }
 
-//isDone();
+    else {
+        // console.log("Partie terminée");
+        // showModal();
+    }
+    //isDone();
 
 }
 
 
 function isDone() {
-    for (let i=0; i<cases.length; i++) {
+    for (let i = 0; i < cases.length; i++) {
         console.log(cases[i].value)
         if (cases[i].value == "") {
             return false;
@@ -68,3 +94,9 @@ function isDone() {
         }
     }
 }
+
+
+/* function showModal() {
+ modall.style.visibility = "visible";   
+//  modall.style.z-index =1;
+}   */
