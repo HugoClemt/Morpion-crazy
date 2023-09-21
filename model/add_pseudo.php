@@ -4,11 +4,11 @@ include_once __DIR__ . './../outils.php';
 
 
 
-echo 'HAAA <br>';
+// echo 'HAAA <br>';
 if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
     $pseudoMulti1 = cleanStr($_POST['pseudoMulti1']);
     $pseudoMulti2 = cleanStr($_POST['pseudoMulti2']);
-    echo 'HOOO<br>';
+    // echo 'HOOO<br>';
 
     $req = "INSERT INTO score (`name`, `point`)
             VALUES 
@@ -16,7 +16,7 @@ if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
                 (:pseudoMulti2, :point)
             ON DUPLICATE KEY UPDATE point = point + VALUES(point);";
 
-    echo 'HUUUUs<br>';
+    // echo 'HUUUUs<br>';
     $args = [
         "pseudoMulti1" => $pseudoMulti1,
         "pseudoMulti2" => $pseudoMulti2,

@@ -1,81 +1,79 @@
 @import './pre.scss';
 @import './button.scss';
 
-
+//ALL
 * {
     background-color: $background;
     font-size: $font-base;
+    margin: 0;
+    padding: 0;
+}
+.container-principale {
+    height: 100vh;
 }
 
+//LINE CASE
+.quadrillage {
+    display: flex;
+}
+
+//CHAQUE CASE
 .case {
     background-color: transparent;
-    height: 100px;
-    width: 100px;
+    font-size: 80px;
+    height: 150px;
+    width: 150px;
+
+    text-align: center;
     border: 0;
-}
-
-#case-0 {
     border-right: 2px solid $body-color;
     border-bottom: 2px solid $body-color;
+    cursor: pointer;
+
+    &:nth-child(3) {
+        border-right: 0;
+    }
 }
 
-#case-1 {
-    border-bottom: 2px solid $body-color;
+//3 DERNIER CASE
+.last-col .case {
+    border-bottom: 0;
 }
 
-#case-2 {
-    border-left: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
+//LISTE MEILLEUR JOEUR
+.classement-liste {
+    list-style: disclosure-closed;
 }
 
-#case-3 {
-    border-right: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-}
 
-#case-5 {
-    border-left: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-}
 
-#case-6 {
-    border-right: 2px solid $body-color;
-}
-
-#case-7 {
-    border-top: 2px solid $body-color;
-}
-
-#case-8 {
-    border-left: 2px solid $body-color;
-}
 
 
 #block-left-top {
     margin-top: 20%;
     margin-left: 25%;
-  }
+}
 
 
 
-#block-left-bottom{
+#block-left-bottom {
     margin-top: 20%;
     margin-left: 25%;
 }
 
-#classement-liste{
+#classement-liste {
     margin-top: 1.75rem;
     line-height: 3rem;
     font-size: 1.75rem;
 }
 
-#title-mode{
+#title-mode {
     margin-bottom: 2rem;
     text-align: justify;
     width: 75%;
 }
 
-#buttonMode{
+#buttonMode {
     margin-bottom: -3.75rem;
 }
 

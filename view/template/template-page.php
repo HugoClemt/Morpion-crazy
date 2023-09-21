@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row container-principale">
     <div class="col-6">
         <div class="row" id="block-left-top">
             <div class="col" id="modeJeuxContainer">
@@ -24,10 +24,12 @@
             </div>
         </div>
     </div>
-    <div class="col-6 block-right">
-        <?php
-        include './view/components/demo-grille.php';
-        ?>
+    <div class="col-6 block-right d-flex justify-content-center align-items-center">
+        <div>
+            <?php
+            include './view/components/demo-grille.php';
+            ?>
+        </div>
     </div>
 </div>
 <script src="./js/structure.js"></script>
