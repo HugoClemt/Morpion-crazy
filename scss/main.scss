@@ -1,83 +1,117 @@
 @import './pre.scss';
 @import './button.scss';
 
-
+//ALL
 * {
     background-color: $background;
     font-size: $font-base;
+    margin: 0;
+    padding: 0;
 }
 
-.case {
-    background-color: transparent;
-    height: 100px;
-    width: 100px;
-    border: 0;
+.container-principale {
+    height: 100vh;
 }
 
-#case-0 {
-    border-right: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-}
+//GRILLE JEU
+.grille {
 
-#case-1 {
-    border-bottom: 2px solid $body-color;
-}
+    //LINE CASE
+    .quadrillage {
+        display: flex;
+    }
 
-#case-2 {
-    border-left: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-}
+    //CHAQUE CASE
+    .case {
+        background-color: transparent;
+        font-size: 80px;
+        height: 150px;
+        width: 150px;
 
-#case-3 {
-    border-right: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-}
+        text-align: center;
+        border: 0;
+        border-right: 2px solid $body-color;
+        border-bottom: 2px solid $body-color;
+        cursor: pointer;
 
-#case-5 {
-    border-left: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-}
+        &:nth-child(3) {
+            border-right: 0;
+        }
+    }
 
-#case-6 {
-    border-right: 2px solid $body-color;
-}
-
-#case-7 {
-    border-top: 2px solid $body-color;
-}
-
-#case-8 {
-    border-left: 2px solid $body-color;
+    //3 DERNIER CASE
+    .last-col .case {
+        border-bottom: 0;
+    }
 }
 
 
-#block-left-top {
-    margin-top: 20%;
+
+
+//MODAL
+.modal-content {
+    border-radius: $border-radius !important;
+    border: 2px solid $body-color !important;
+
+    //HEADER
+    .modal-header {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        border: 0;
+    }
+
+    //BODY
+    .modal-body {
+
+        //CARD
+        .card {
+            border: 0 !important;
+            background-color: transparent !important;
+
+            //INPUT
+            input {
+                border: 0;
+                margin: 10px 0;
+                padding: 5px 10px;
+                box-shadow: none;
+                border: 2px solid $body-color;
+            }
+        }
+    }
+
+    //FOOTER
+    .modal-footer {
+        border-bottom-left-radius: $border-radius;
+        border: 0;
+        border-bottom-right-radius: $border-radius;
+
+        .btn.ferme {
+            margin-right: 15px;
+
+        }
+    }
+}
+
+//CONTAINER
+.contain {
     margin-left: 25%;
-  }
 
+    //BTN CHOIX MODE
+    #buttonMode button:nth-child(1) {
+        margin-right: 15px;
+    }
 
+    //BLOCK LEFT TOP
+    #block-left-top {
+        margin-bottom: 40px;
+    }
 
-#block-left-bottom{
-    margin-top: 20%;
-    margin-left: 25%;
+    //BLOCK LEFT BOTTOM
+    #block-left-bottom {
+
+        //LISTE MEILLEUR JOEUR
+        #classement-liste {
+            list-style: disclosure-closed;
+        }
+    }
 }
-
-#classement-liste{
-    margin-top: 1.75rem;
-    line-height: 3rem;
-    font-size: 1.75rem;
-}
-
-#title-mode{
-    margin-bottom: 2rem;
-    text-align: justify;
-    width: 75%;
-}
-
-#buttonMode{
-    margin-bottom: -3.75rem;
-}
-
-
-

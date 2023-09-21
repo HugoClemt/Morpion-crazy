@@ -1,29 +1,39 @@
 .btn.btn-primary {
     background-color: $orange;
     border: 2px solid $orange;
-    border-radius: 8px;
+    border-radius: $border-radius;
     padding: 10px 50px;
-    color: $body-color;
+    color: white;
 
+    &:focus,
+    &:active,
     &:hover {
         background-color: transparent;
         // color: $orange;
         border: 2px solid $orange;
-        color: $body-color;
+        color: $orange;
     }
 }
 
 .btn.btn-secondary {
     background-color: transparent;
     border: 2px solid $orange;
-    border-radius: 8px;
+    border-radius: $border-radius;
     padding: 10px 50px;
     color: $orange;
 
+    &:focus,
+
+    &:active,
     &:hover {
         background-color: $orange;
         // color: $orange;
         border: 2px solid $orange;
         color: white;
     }
+}
+
+.btn-menu {
+    font-size: 2 * 1rem !important;
+    padding: 8px 90px !important;
 }

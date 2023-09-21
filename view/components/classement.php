@@ -1,6 +1,6 @@
 <div>
   <h2>Meilleurs joueurs...</h2>
-  <ul id="classement-liste">
+  <ul id="classement-liste" class="">
     <?php
     include_once './controller/hight_score.php';
 
