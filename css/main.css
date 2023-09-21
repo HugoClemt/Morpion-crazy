@@ -62,3 +62,36 @@ body {
   margin-top: 20%;
   margin-left: 25%;
 }
+
+#classement-liste {
+  margin-top: 1.75rem;
+  line-height: 3rem;
+  font-size: 1.75rem;
+}
+
+#title-mode {
+  margin-bottom: 2rem;
+  text-align: justify;
+  width: 75%;
+}
+
+#buttonMode {
+  margin-bottom: -3.75rem;
+}
+
+#soloButton {
+  background-color: orange;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 5%;
+  color: white;
+  margin-right: 2rem;
+}
+
+#multiButton {
+  background-color: orange;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 50px;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

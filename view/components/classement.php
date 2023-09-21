@@ -1,8 +1,10 @@
-<div class="col">
+<div>
   <h2>Meilleurs joueurs...</h2>
-  <?php
-  include_once './controller/hight_score.php';
+  <ul id="classement-liste">
+    <?php
+    include_once './controller/hight_score.php';
 
-  hight_score($hight_score);
-  ?>
+    hight_score($hight_score);
+    ?>
+  </ul>
 </div>
