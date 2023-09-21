@@ -1,4 +1,5 @@
 @import './pre.scss';
+@import './button.scss';
 
 
 body {
@@ -54,14 +55,7 @@ body {
     margin-left: 25%;
   }
 
-#jouerButton{
-    background-color: orange;
-    border: 0;
-    border-radius: 8px;
-    padding: 10px 20%;
-    color: white;
-    font-size: 2rem;
-}
+
 
 #block-left-bottom{
     margin-top: 20%;
