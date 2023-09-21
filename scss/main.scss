@@ -8,74 +8,115 @@
     margin: 0;
     padding: 0;
 }
+
 .container-principale {
     height: 100vh;
 }
 
-//LINE CASE
-.quadrillage {
-    display: flex;
-}
+//GRILLE JEU
+.grille {
+    // transform: skew(0deg, 4deg);
 
-//CHAQUE CASE
-.case {
-    background-color: transparent;
-    font-size: 80px;
-    height: 150px;
-    width: 150px;
+    //LINE CASE
+    .quadrillage {
+        display: flex;
+    }
 
-    text-align: center;
-    border: 0;
-    border-right: 2px solid $body-color;
-    border-bottom: 2px solid $body-color;
-    cursor: pointer;
+    //CHAQUE CASE
+    .case {
+        background-color: transparent;
+        font-size: 80px;
+        height: 150px;
+        width: 150px;
 
-    &:nth-child(3) {
-        border-right: 0;
+        text-align: center;
+        border: 0;
+        border-right: 2px solid $body-color;
+        border-bottom: 2px solid $body-color;
+        cursor: pointer;
+
+        &:nth-child(3) {
+            border-right: 0;
+        }
+    }
+
+    //3 DERNIER CASE
+    .last-col .case {
+        border-bottom: 0;
     }
 }
 
-//3 DERNIER CASE
-.last-col .case {
-    border-bottom: 0;
+
+
+
+//MODAL
+.modal-content {
+    border-radius: $border-radius !important;
+    border: 2px solid $body-color !important;
+
+    //HEADER
+    .modal-header {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        border: 0;
+    }
+
+    //BODY
+    .modal-body {
+
+        //CARD
+        .card {
+            border: 0 !important;
+            background-color: transparent !important;
+
+            //INPUT
+            input {
+                border: 0;
+                margin: 10px 0;
+                padding: 5px 10px;
+                box-shadow: none;
+                border: 2px solid $body-color;
+            }
+        }
+    }
+
+    //FOOTER
+    .modal-footer {
+        border-bottom-left-radius: $border-radius;
+        border: 0;
+        border-bottom-right-radius: $border-radius;
+
+        .btn.ferme {
+            margin-right: 15px;
+
+        }
+    }
 }
 
-//LISTE MEILLEUR JOEUR
-.classement-liste {
-    list-style: disclosure-closed;
-}
-
-
-
-
-
-#block-left-top {
-    margin-top: 20%;
+//CONTAINER
+.contain {
     margin-left: 25%;
+
+    //BTN CHOIX MODE
+    #buttonMode button:nth-child(1) {
+        margin-right: 15px;
+    }
+
+    //BLOCK LEFT TOP
+    #block-left-top {
+        margin-bottom: 40px;
+    }
+
+    //BLOCK LEFT BOTTOM
+    #block-left-bottom {
+
+        //LISTE MEILLEUR JOEUR
+        #classement-liste {
+            list-style: disclosure-closed;
+        }
+    }
 }
 
-
-
-#block-left-bottom {
-    margin-top: 20%;
-    margin-left: 25%;
+.template-grille {
+    height: 100vh;
 }
-
-#classement-liste {
-    margin-top: 1.75rem;
-    line-height: 3rem;
-    font-size: 1.75rem;
-}
-
-#title-mode {
-    margin-bottom: 2rem;
-    text-align: justify;
-    width: 75%;
-}
-
-#buttonMode {
-    margin-bottom: -3.75rem;
-}
-
-
-
