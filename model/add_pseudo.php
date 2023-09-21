@@ -1,29 +1,29 @@
 <?php
-include_once __DIR__. '/database.php';
-//TODO a revoir
-// if (isset($_POST['pseudoMulti1']) && isset($_POST['score'])) {
-//     $pseudoMulti1 = cleanStr($_POST['pseudoMulti1']);
-//     $score = cleanStr($_POST['score']);
+include_once __DIR__ . '/database.php';
+include_once __DIR__ . './../outils.php';
 
 
-//     $req ="INSERT INTO score SET `pseudoMulti1` = :name, `score` = :point";
 
-//     $args = [
-//         "pseudoMulti1" => $pseudoMulti1,
-//         "score" => $score
-//     ];
+echo 'HAAA <br>';
+if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
+    $pseudoMulti1 = cleanStr($_POST['pseudoMulti1']);
+    $pseudoMulti2 = cleanStr($_POST['pseudoMulti2']);
+    echo 'HOOO<br>';
 
-//     databaseWrite($req, $args);
-//     header('Location: index.php');
-// }
+    $req = "INSERT INTO score (`name`, `point`)
+            VALUES 
+                (:pseudoMulti1, :point),
+                (:pseudoMulti2, :point)
+            ON DUPLICATE KEY UPDATE point = point + VALUES(point);";
 
-// EX
-// INSERT INTO score (name, point)
-// VALUE ('steve', '16');
+    echo 'HUUUUs<br>';
+    $args = [
+        "pseudoMulti1" => $pseudoMulti1,
+        "pseudoMulti2" => $pseudoMulti2,
+        "point" => '2'
+    ];
 
-$hight_score = databaseWrite(
-    "INSERT INTO score (name, point)
-    VALUES ('Thomas', '0')
-    ON DUPLICATE KEY UPDATE point = '0';"
-);
+    databaseWrite($req, $args);
 
+    header('Location: http://localhost/mydigitalschool/Morpion/multi.php');
+}
