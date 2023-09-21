@@ -1,3 +1,3 @@
 <div>
-    <button id="jouerButton">Jouer !</button>
+    <button id="jouerButton" class="btn btn-primary">Jouer !</button>
 </div>
