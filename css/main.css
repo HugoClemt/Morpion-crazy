@@ -4,7 +4,6 @@
   border-radius: 10px;
   padding: 10px 50px;
   color: white;
-  font-size: 2rem;
 }
 .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:hover {
   background-color: transparent;
@@ -25,6 +24,11 @@
   color: white;
 }
 
+.btn-menu {
+  font-size: 2rem !important;
+  padding: 8px 90px !important;
+}
+
 * {
   background-color: #f4f3ee;
   font-size: 1rem;
@@ -36,11 +40,10 @@
   height: 100vh;
 }
 
-.quadrillage {
+.grille .quadrillage {
   display: flex;
 }
-
-.case {
+.grille .case {
   background-color: transparent;
   font-size: 80px;
   height: 150px;
@@ -51,40 +54,51 @@
   border-bottom: 2px solid #545454;
   cursor: pointer;
 }
-.case:nth-child(3) {
+.grille .case:nth-child(3) {
   border-right: 0;
 }
-
-.last-col .case {
+.grille .last-col .case {
   border-bottom: 0;
 }
 
-.classement-liste {
+.modal-content {
+  border-radius: 10px !important;
+  border: 2px solid #545454 !important;
+}
+.modal-content .modal-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 0;
+}
+.modal-content .modal-body .card {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+.modal-content .modal-body .card input {
+  border: 0;
+  margin: 10px 0;
+  padding: 5px 10px;
+  box-shadow: none;
+  border: 2px solid #545454;
+}
+.modal-content .modal-footer {
+  border-bottom-left-radius: 10px;
+  border: 0;
+  border-bottom-right-radius: 10px;
+}
+.modal-content .modal-footer .btn.ferme {
+  margin-right: 15px;
+}
+
+.contain {
+  margin-left: 25%;
+}
+.contain #buttonMode button:nth-child(1) {
+  margin-right: 15px;
+}
+.contain #block-left-top {
+  margin-bottom: 40px;
+}
+.contain #block-left-bottom #classement-liste {
   list-style: disclosure-closed;
-}
-
-#block-left-top {
-  margin-top: 20%;
-  margin-left: 25%;
-}
-
-#block-left-bottom {
-  margin-top: 20%;
-  margin-left: 25%;
-}
-
-#classement-liste {
-  margin-top: 1.75rem;
-  line-height: 3rem;
-  font-size: 1.75rem;
-}
-
-#title-mode {
-  margin-bottom: 2rem;
-  text-align: justify;
-  width: 75%;
-}
-
-#buttonMode {
-  margin-bottom: -3.75rem;
 }
