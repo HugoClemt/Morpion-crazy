@@ -1,5 +1,5 @@
 <div class="row aaa">
-        <h2 id="title-mode">Quel de mode jeux, vous voulez choisir ?</h2>
+        <h2 id="title-mode">Quel mode de jeu souhaitez-vous sélectionner ?</h2>
         <p id="buttonMode">
             <button class="btn btn-primary" id="soloButton" type="button" data-toggle="collapse" data-target="#modalSolo" aria-expanded="false" aria-controls="collapseExample">
                 Contre un robot
