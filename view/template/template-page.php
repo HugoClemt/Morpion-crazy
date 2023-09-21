@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="col-6 block-right">
+    <div class="col-6 block-right d-flex align-items-center justify-content-center">
         <?php
         include './view/components/grille.php';
         ?>

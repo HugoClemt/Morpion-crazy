@@ -40,7 +40,7 @@
   height: 100vh;
 }
 
-.grille tra .quadrillage {
+.grille .quadrillage {
   display: flex;
 }
 .grille .case {
@@ -101,4 +101,8 @@
 }
 .contain #block-left-bottom #classement-liste {
   list-style: disclosure-closed;
+}
+
+.template-grille {
+  height: 100vh;
 }

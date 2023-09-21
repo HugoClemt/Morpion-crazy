@@ -15,6 +15,7 @@
 
 //GRILLE JEU
 .grille {
+    // transform: skew(0deg, 4deg);
 
     //LINE CASE
     .quadrillage {
@@ -114,4 +115,8 @@
             list-style: disclosure-closed;
         }
     }
+}
+
+.template-grille {
+    height: 100vh;
 }
