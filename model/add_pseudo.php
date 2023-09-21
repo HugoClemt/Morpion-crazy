@@ -1,12 +1,8 @@
 <?php
 include_once __DIR__ . '/database.php';
+include_once __DIR__ . './../outils.php';
 
-// $hight_score = databaseWrite(
-//     "INSERT INTO score (name, point)
-//     VALUES ('Thomas', 'VotreValeur')
-//     ON DUPLICATE KEY UPDATE point = point + VALUES(point);
-//     "
-// );
+
 
 echo 'HAAA <br>';
 if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
@@ -29,5 +25,5 @@ if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
 
     databaseWrite($req, $args);
 
-    header('Location: http://localhost/mydigitalschool/Morpion/');
+    header('Location: http://localhost/mydigitalschool/Morpion/multi.php');
 }

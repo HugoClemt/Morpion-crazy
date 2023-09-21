@@ -1,7 +1,29 @@
 .btn.btn-primary {
     background-color: $orange;
+    border: 2px solid $orange;
+    border-radius: 8px;
+    padding: 10px 50px;
     color: $body-color;
-    border-radius: 10px;
-    border: 0;
-    padding: 10px 20%;
+
+    &:hover {
+        background-color: transparent;
+        // color: $orange;
+        border: 2px solid $orange;
+        color: $body-color;
+    }
+}
+
+.btn.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $orange;
+    border-radius: 8px;
+    padding: 10px 50px;
+    color: $orange;
+
+    &:hover {
+        background-color: $orange;
+        // color: $orange;
+        border: 2px solid $orange;
+        color: white;
+    }
 }

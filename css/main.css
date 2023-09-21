@@ -1,13 +1,32 @@
 .btn.btn-primary {
   background-color: #ff9a00;
+  border: 2px solid #ff9a00;
+  border-radius: 8px;
+  padding: 10px 50px;
   color: #545454;
-  border-radius: 10px;
-  border: 0;
-  padding: 10px 20%;
+}
+.btn.btn-primary:hover {
+  background-color: transparent;
+  border: 2px solid #ff9a00;
+  color: #545454;
 }
 
-body {
+.btn.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #ff9a00;
+  border-radius: 8px;
+  padding: 10px 50px;
+  color: #ff9a00;
+}
+.btn.btn-secondary:hover {
+  background-color: #ff9a00;
+  border: 2px solid #ff9a00;
+  color: white;
+}
+
+* {
   background-color: #f4f3ee;
+  font-size: 1rem;
 }
 
 .case {
@@ -78,20 +97,3 @@ body {
 #buttonMode {
   margin-bottom: -3.75rem;
 }
-
-#soloButton {
-  background-color: orange;
-  border: 0;
-  border-radius: 8px;
-  padding: 10px 5%;
-  color: white;
-  margin-right: 2rem;
-}
-
-#multiButton {
-  background-color: orange;
-  border: 0;
-  border-radius: 8px;
-  padding: 10px 50px;
-  color: white;
-}/*# sourceMappingURL=main.css.map */

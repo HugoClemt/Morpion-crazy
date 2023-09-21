@@ -2,8 +2,9 @@
 @import './button.scss';
 
 
-body {
+* {
     background-color: $background;
+    font-size: $font-base;
 }
 
 .case {
@@ -78,21 +79,5 @@ body {
     margin-bottom: -3.75rem;
 }
 
-#soloButton{
-    background-color: orange;
-    border: 0;
-    border-radius: 8px;
-    padding: 10px 5%;
-    color: white;
-    margin-right: 2rem;
-}
-
-#multiButton{
-    background-color: orange;
-    border: 0;
-    border-radius: 8px;
-    padding: 10px 50px;
-    color: white;
-}
 
 
