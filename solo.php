@@ -13,28 +13,30 @@
 
 </head>
 
+
+<input class="begin" id="lancer" type="button" value="Lancer la partie" onclick>
 <body>
     <div class="container">
         <div class="row quadrillage">
             <div class="col">
-                <input class="case" type="text" id="0" onclick="execBot(cases[0]); freeCells(); botPlayer(casesLibres);" readonly>
-                <input class="case" type="text" id="1" onclick="execBot(cases[1]); freeCells(); botPlayer(casesLibres);" readonly>
-                <input class="case" type="text" id="2" onclick="execBot(cases[2]); freeCells(); botPlayer(casesLibres);" readonly>
+                <input class="case" type="text" id="0" onclick="freeCells(); execBot(cases[0]); botPlayer(tabCasesLibres);" readonly>
+                <input class="case" type="text" id="1" onclick="freeCells(); execBot(cases[1]); botPlayer(tabCasesLibres);" readonly>
+                <input class="case" type="text" id="2" onclick="freeCells(); execBot(cases[2]); botPlayer(tabCasesLibres);" readonly>
             </div>
         </div>
         <div class="row quadrillage">
             <div class="col">
-                <input class="case" type="text" id="3" onclick="execBot(cases[3]); freeCells(); botPlayer(casesLibres);" readonly>
-                <input class="case" type="text" id="4" onclick="execBot(cases[4]); freeCells(); botPlayer(casesLibres);" readonly>
-                <input class="case" type="text" id="5" onclick="execBot(cases[5]); freeCells(); botPlayer(casesLibres);" readonly>
+                <input class="case" type="text" id="3" onclick="freeCells(); execBot(cases[3]);" readonly>
+                <input class="case" type="text" id="4" onclick="freeCells(); execBot(cases[4]);" readonly>
+                <input class="case" type="text" id="5" onclick="freeCells(); execBot(cases[5]);" readonly>
             </div>
         </div>
 
         <div class="row quadrillage">
             <div class="col">
-                <input class="case" type="text" id="6" onclick="execBot(cases[6]); freeCells(); botPlayer(casesLibres);" readonly>
-                <input class="case" type="text" id="7" onclick="execBot(cases[7]); freeCells(); botPlayer(casesLibres);" readonly>
-                <input class="case" type="text" id="8" onclick="execBot(cases[8]); freeCells(); botPlayer(casesLibres);" readonly>
+                <input class="case" type="text" id="6" onclick="freeCells(); execBot(cases[6]);" readonly>
+                <input class="case" type="text" id="7" onclick="freeCells(); execBot(cases[7]);" readonly>
+                <input class="case" type="text" id="8" onclick="freeCells(); execBot(cases[8]);" readonly>
             </div>
         </div>
     </div>
