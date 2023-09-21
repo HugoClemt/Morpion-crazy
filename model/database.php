@@ -1,4 +1,6 @@
 <?php
+include_once __DIR__ . './../outils.php';
+
 // Fonction pour établir la connexion à la base de données
 function databaseConnect()
 {
