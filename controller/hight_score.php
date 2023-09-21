@@ -7,7 +7,7 @@ function hight_score($hight_score)
         echo '<p>Aucune donnée à afficher.</p>';
     } else {
         foreach ($hight_score as $data) {
-            echo '<p>' . $data["name"] . ' - Points: ' . $data["point"] . '</p>';
+            echo '<li>' . $data["name"] . ' - Points: ' . $data["point"] . '</li>';
         };
     }
 }
