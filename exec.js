@@ -14,9 +14,11 @@ console.log(state);
 function exec(casee) {
     if (state == 0 && casee.value != "X" && casee.value != "O") {
       casee.value = "X";
+      casee.style.color = "#ff9a00";
       state = 1;
     } else if (state == 1 && casee.value != "X" && casee.value != "O") {
       casee.value = "O";
+      casee.style.color = "#00a2ff";
       state = 0;
     }
   
