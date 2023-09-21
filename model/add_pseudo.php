@@ -29,5 +29,5 @@ if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
 
     databaseWrite($req, $args);
 
-    header('Location: ./../multi.php');
+    header('Location: ./../view/template/template-grille.php');
 }

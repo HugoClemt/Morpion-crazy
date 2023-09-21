@@ -16,7 +16,7 @@
 
                     </div>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="submit" class="btn btn-primary">Jouer</button>
+                    <button type="submit" class="btn btn-primary"><a href="?page=template-grille">Jouer</a></button>
                 </form>
             </div>
         </div>
@@ -38,7 +38,7 @@
                             required="required">
                     </div>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="submit" class="btn btn-primary">Jouer</button>
+                    <button type="submit" class="btn btn-primary"><a href="?page=template-grille">Jouer</a></button>
                 </form>
             </div>
         </div>

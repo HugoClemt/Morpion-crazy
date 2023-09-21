@@ -26,8 +26,8 @@
     </div>
     <div class="col-6 block-right">
         <?php
-        include './view/components/demo-grille.php';
+        include './view/components/grille.php';
         ?>
     </div>
 </div>
-<script src="./js/structure.js"></script>
+<script src="./js/structure-template-page.js"></script>
