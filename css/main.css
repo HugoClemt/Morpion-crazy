@@ -40,7 +40,7 @@
   height: 100vh;
 }
 
-.grille .quadrillage {
+.grille tra .quadrillage {
   display: flex;
 }
 .grille .case {
