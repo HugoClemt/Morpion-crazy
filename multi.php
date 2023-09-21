@@ -43,7 +43,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keybord="false">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keybord="false">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
