@@ -1,19 +1,14 @@
-<div class="row aaa">
-    <h2 id="title-mode">Quel de mode jeux, vous voulez choisir ?</h2>
+<div class="row">
+    <h2 id="title-mode">Quel mode de jeu souhaitez-vous sélectionner ?</h2>
     <p id="buttonMode">
-        <button class="btn btn-secondary" id="soloButton" type="button" data-toggle="collapse" data-target="#modalSolo" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-secondary" id="soloButton" type="button" data-toggle="modal" data-target="#ModalSolo">
             Contre un robot
         </button>
-        <button class="btn btn-secondary" id="multiButton" type="button" data-toggle="collapse" data-target="#modalMulti" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-secondary" id="multiButton" type="button" data-toggle="modal" data-target="#ModalMulti">
             1 VS 1
         </button>
-
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button>
     </p>
-    <div class="collapse" id="modalSolo">
+    <!-- <div class="collapse" id="modalSolo">
         <div class="card card-body">
             <input type="text" id="pseudoSolo" placeholder="Entrez votre pseudo">
 
@@ -27,7 +22,7 @@
                 <input type="text" name="pseudoMulti2" id="pseudoMulti2" placeholder="Entrez le second pseudo" required="required">
             </div>
             <button class="btn btn-primary" type="submit">Jouer</button>
-    </form>
+    </form> -->
 </div>
 
 

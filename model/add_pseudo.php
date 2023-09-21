@@ -1,6 +1,10 @@
 <?php
 include_once __DIR__ . '/database.php';
-include_once __DIR__ . './../outils.php';
+// include_once __DIR__ . './../outils.php';
+
+function cleanStr($str) {
+    return htmlspecialchars(strip_tags(trim($str)));
+}
 
 
 
@@ -25,5 +29,5 @@ if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
 
     databaseWrite($req, $args);
 
-    header('Location: http://localhost/mydigitalschool/Morpion/multi.php');
+    header('Location: ./../multi.php');
 }

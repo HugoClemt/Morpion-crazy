@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morpion Crazy - DEV</title>
+    <title>Morpion Crazy - DEV Multi</title>
     <!-- <link rel="stylesheet" type="text/css" href="./css/main.css" /> -->
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link href="./config/cnx.php" />
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <?php 
+    <!-- <?php 
     echo $_POST['pseudoMulti1'];
-    echo $_POST['pseudoMulti2'];?>
+    echo $_POST['pseudoMulti2'];?> -->
     <div class="container">
         <div class="row quadrillage">
             <div class="col">
@@ -60,7 +60,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script src="tic.js"></script>
+    <script src="exec.js"></script>
+    <!-- <script src="multi.js"></script> -->
+
 </body>
 
 </html>
