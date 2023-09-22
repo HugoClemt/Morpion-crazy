@@ -2,13 +2,14 @@
     <div class="row">
         <div class="col">
             <?php
-            include('./view/components/grille.php');
+            include_once './view/components/display_scores.php';
+            include_once './view/components/grille.php';
             ?>
         </div>
     </div>
 </div>
 
-<!-- Modal de fin -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keybord="false">
     <div class="modal-dialog">
         <div class="modal-content">
