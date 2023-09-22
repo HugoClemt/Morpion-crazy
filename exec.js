@@ -17,9 +17,11 @@ function gererClicCase(id) {
     if (tourJoueur1) {
       caseCliquee.value = joueur1Symbole;
       grilleDeJeu[id] = joueur1Symbole;
+      caseCliquee.classList.add('x')
     } else {
       caseCliquee.value = joueur2Symbole;
       grilleDeJeu[id] = joueur2Symbole;
+      caseCliquee.classList.add('y')
     }
 
     // Changer de joueur

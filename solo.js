@@ -16,6 +16,7 @@ function gererClicCase(id) {
   if (caseCliquee.value === "" && tourJoueur) {
     caseCliquee.value = joueurSymbole;
     grilleDeJeu[id] = joueurSymbole;
+    caseCliquee.classList.add('x')
     tourJoueur = false; //C'est à l'ordi de jouer
     verifierFinDePartie();
 
@@ -33,6 +34,7 @@ function jouerOrdinateur() {
     const caseOrdinateur = document.getElementById(meilleureCase);
     caseOrdinateur.value = ordinateurSymbole;
     grilleDeJeu[meilleureCase] = ordinateurSymbole;
+    caseOrdinateur.classList.add('y');
     tourJoueur = true; // Passer le tour au joueur
     verifierFinDePartie();
   }
