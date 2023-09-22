@@ -27,5 +27,5 @@
     </div>
 </div>
 
-<script src="exec.js"></script>
+<script src="js/exec.js"></script>
 
