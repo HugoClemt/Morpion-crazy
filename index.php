@@ -11,7 +11,6 @@
 
 <body>
   <?php
-  include './model/add_pseudo.php';
   $page = isset($_GET['page']) ? $_GET['page'] : 'template-page';
 
   switch ($page) {

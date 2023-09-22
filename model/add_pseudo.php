@@ -38,9 +38,9 @@ include_once __DIR__ . '/database.php';
 //     }
 // }
 
-// if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
-//     $pseudoMulti1 = cleanStr($_POST['pseudoMulti1']);
-//     $pseudoMulti2 = cleanStr($_POST['pseudoMulti2']);
+// if (isset($_GET['pseudoMulti1']) && isset($_GET['pseudoMulti2'])) {
+//     $pseudoMulti1 = cleanStr($_GET['pseudoMulti1']);
+//     $pseudoMulti2 = cleanStr($_GET['pseudoMulti2']);
     
 //     // Le reste de votre code ici
 // } else {
@@ -55,10 +55,10 @@ include_once __DIR__ . '/database.php';
 
 
 // Vérifie si les champs 'pseudoMulti1' et 'pseudoMulti2' sont définis dans la requête POST
-if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
+if (isset($_GET['pseudoMulti1']) && isset($_GET['pseudoMulti2'])) {
     // Nettoie les valeurs des champs 'pseudoMulti1' et 'pseudoMulti2'
-    $pseudoMulti1 = cleanStr($_POST['pseudoMulti1']);
-    $pseudoMulti2 = cleanStr($_POST['pseudoMulti2']);
+    $pseudoMulti1 = cleanStr($_GET['pseudoMulti1']);
+    $pseudoMulti2 = cleanStr($_GET['pseudoMulti2']);
 
     // Requête SQL pour insérer ou mettre à jour des données dans la table 'score' en cas de doublon de clé (ON DUPLICATE KEY UPDATE)
     $req = "INSERT INTO score (`name`, `point`)
@@ -93,9 +93,9 @@ if (isset($_POST['pseudoMulti1']) && isset($_POST['pseudoMulti2'])) {
 
 
 // Vérifie si le champ 'pseudoSolo' est défini dans la requête POST
-// if (isset($_POST['pseudoSolo'])) {
+// if (isset($_GET['pseudoSolo'])) {
 //     // Nettoie la valeur du champ 'pseudoSolo'
-//     $pseudoSolo = cleanStr($_POST['pseudoSolo']);
+//     $pseudoSolo = cleanStr($_GET['pseudoSolo']);
 
 //     // Requête SQL pour insérer ou mettre à jour des données dans la table 'score' en cas de doublon de clé (ON DUPLICATE KEY UPDATE)
 //     $req = "INSERT INTO score (`name`, `point`)

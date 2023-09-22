@@ -6,7 +6,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Mode 1 VS 1</h5>
             </div>
             <div class="modal-body">
-                <form label="infoMulti" method="POST" action="../../model/add_pseudo.php">
+                <form label="infoMulti" method="GET" action="./model/add_pseudo.php">
                     <div class="card">
                         <input type="text" name="pseudoMulti1" id="pseudoMulti1" placeholder="Entrer le pseudo du 1re joueur" required="required">
                         <input type="text" name="pseudoMulti2" id="pseudoMulti2" placeholder="Entrer le pseudo du 2eme joueur" required="required">
