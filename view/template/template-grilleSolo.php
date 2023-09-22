@@ -27,4 +27,4 @@
     </div>
 </div>
 
-<script src="solo.js"></script>
+<script src="js/solo.js"></script>
