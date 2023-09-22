@@ -25,4 +25,4 @@
     </div>
 </div>
 
-<script src="exec.js"></script>
+<script src="solo.js"></script>
