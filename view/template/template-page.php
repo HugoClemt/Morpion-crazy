@@ -4,17 +4,16 @@
             <div class="row" id="block-left-top">
                 <div class="col" id="modeJeuxContainer">
                     <?php
-                    $sous_page = isset($_GET['sous_page']) ? $_GET['sous_page'] : 'menu';
+                    $page = isset($_GET['page']) ? $_GET['page'] : 'jouer';
 
-                    switch ($sous_page) {
-                        case 'menu':
+                    switch ($page) {
+                        case 'jouer':
                             include('./view/components/jouer.php');
                             break;
-                        case 'game-mode':
+                        case 'mode-jeux':
                             include('./view/components/mode-jeux.php');
                             break;
                     }
-
                     ?>
                 </div>
             </div>

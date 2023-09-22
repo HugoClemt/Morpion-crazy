@@ -63,18 +63,7 @@
 
     //BODY
     .modal-body {
-        border-bottom-left-radius: $border-radius;
-        border: 0;
-        border-bottom-right-radius: $border-radius;
-        .btn.ferme {
-            margin-right: 15px;
 
-        }
-
-        .modal-btn {
-
-            margin-top: 15px;
-        }
         //CARD
         .card {
             border: 0 !important;
@@ -88,6 +77,18 @@
                 box-shadow: none;
                 border: 2px solid $body-color;
             }
+        }
+    }
+
+    //FOOTER
+    .modal-footer {
+        border-bottom-left-radius: $border-radius;
+        border: 0;
+        border-bottom-right-radius: $border-radius;
+
+        .btn.ferme {
+            margin-right: 15px;
+
         }
     }
 }
@@ -113,10 +114,6 @@
         #classement-liste {
             list-style: disclosure-closed;
         }
-    }
-
-    #title-mode {
-        margin-bottom: 30px;
     }
 }
 
