@@ -127,3 +127,13 @@
 .template-grille {
     height: 100vh;
 }
+
+//Ajout des couleurs sur les X et O de la grille
+
+.x {
+    color: $orange;
+}
+
+.y {
+    color: $body-color;
+}
