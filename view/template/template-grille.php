@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<!-- Modal de fin -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keybord="false">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -18,10 +18,13 @@
                     chopper votre boulot.</h1>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary"><a href="./gameType.php">Revanche !</a></button>
+                <button type="button" class="btn btn-secondary" id="rejouerBtn">Revanche !</button>
             </div>
         </div>
     </div>
 </div>
 
 <script src="exec.js"></script>
+<script src="game.js"></script>
+
+

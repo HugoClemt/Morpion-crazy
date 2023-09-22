@@ -32,7 +32,7 @@
             <div class="modal-body">
                 <form label="infoSolo" method="post" action="./model/add_pseudo.php">
                     <div class="card">
-                        <input type="text" name="pseudoMulti1" id="pseudoMulti1" placeholder="Entrer votre pseudo" required="required">
+                        <input type="text" name="pseudoSolo" id="pseudoSolo" placeholder="Entrer votre pseudo" required="required">
                     </div>
                 </form>
             </div>

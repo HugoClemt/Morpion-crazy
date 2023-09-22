@@ -19,24 +19,24 @@
     <div class="container">
         <div class="row quadrillage">
             <div class="col">
-                <input class="case" type="text" id="0" onclick="freeCells(); execBot(cases[0]); botPlayer(tabCasesLibres);" readonly>
-                <input class="case" type="text" id="1" onclick="freeCells(); execBot(cases[1]); botPlayer(tabCasesLibres);" readonly>
-                <input class="case" type="text" id="2" onclick="freeCells(); execBot(cases[2]); botPlayer(tabCasesLibres);" readonly>
+                <input class="case" type="text" id="0" readonly>
+                <input class="case" type="text" id="1" readonly>
+                <input class="case" type="text" id="2" readonly>
             </div>
         </div>
         <div class="row quadrillage">
             <div class="col">
-                <input class="case" type="text" id="3" onclick="freeCells(); execBot(cases[3]);" readonly>
-                <input class="case" type="text" id="4" onclick="freeCells(); execBot(cases[4]);" readonly>
-                <input class="case" type="text" id="5" onclick="freeCells(); execBot(cases[5]);" readonly>
+                <input class="case" type="text" id="3" readonly>
+                <input class="case" type="text" id="4" readonly>
+                <input class="case" type="text" id="5" readonly>
             </div>
         </div>
 
         <div class="row quadrillage">
             <div class="col">
-                <input class="case" type="text" id="6" onclick="freeCells(); execBot(cases[6]);" readonly>
-                <input class="case" type="text" id="7" onclick="freeCells(); execBot(cases[7]);" readonly>
-                <input class="case" type="text" id="8" onclick="freeCells(); execBot(cases[8]);" readonly>
+                <input class="case" type="text" id="6" readonly>
+                <input class="case" type="text" id="7" readonly>
+                <input class="case" type="text" id="8" readonly>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script src="exec.js"></script>
+
     <script src="solo.js"></script>
 
 </body>
