@@ -1,8 +1,11 @@
 <div class="row container-principale">
     <div class="col-6 d-flex align-items-center">
-        <div class="contain">
+        <div class="contain text-center">
             <div class="row" id="block-left-top">
                 <div class="col" id="modeJeuxContainer">
+                    <div class="containlogo">
+                    <img src="../../pix/Logo-tictactoe.png">
+                    </div>
                     <?php
                     $page = isset($_GET['page']) ? $_GET['page'] : 'jouer';
 

@@ -36,6 +36,11 @@
   padding: 0;
 }
 
+.containlogo img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
 .container-principale {
   height: 100vh;
 }
@@ -105,12 +110,4 @@
 
 .template-grille {
   height: 100vh;
-}
-
-.x {
-  color: #ff9a00;
-}
-
-.y {
-  color: #545454;
 }
