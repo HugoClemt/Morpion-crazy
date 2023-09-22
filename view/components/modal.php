@@ -7,7 +7,6 @@
             </div>
             <div class="modal-body">
                 <form label="infoMulti" method="POST" action="../../model/add_pseudo.php">
-
                     <div class="card">
                         <input type="text" name="pseudoMulti1" id="pseudoMulti1" placeholder="Entrer le pseudo du 1re joueur" required="required">
                         <input type="text" name="pseudoMulti2" id="pseudoMulti2" placeholder="Entrer le pseudo du 2eme joueur" required="required">
@@ -34,12 +33,12 @@
                 <form label="infoSolo" method="post" action="./model/add_pseudo.php">
                     <div class="card">
                         <input type="text" name="pseudoMulti1" id="pseudoMulti1" placeholder="Entrer votre pseudo" required="required">
+                        <div class="modal-btn">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            <a href="?page=template-grille"><button type="submit" class="btn btn-primary">Jouer</button></a>
+                        </div>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                <a href="?page=template-grille"><button type="submit" class="btn btn-primary">Jouer</button></a>
             </div>
         </div>
     </div>

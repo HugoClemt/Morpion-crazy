@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col">
             <?php
-            include_once './view/components/display_scores.php';
+            // include_once './view/components/display_scores.php';
             include_once './view/components/grille.php';
             ?>
         </div>
