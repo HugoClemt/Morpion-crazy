@@ -19,13 +19,12 @@
                     chopper votre boulot.</h1>
             </div>
             <div class="modal-footer">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" id="rejouerBtn">Revanche !</button>
                 <button type="button" class="btn btn-secondary" id="backMenu" onclick="window.location.href = '../';">Retour au menu</button>
-
             </div>
         </div>
     </div>
 </div>
 
-<script src="exec.js"></script>
-
+<script src="solo.js"></script>

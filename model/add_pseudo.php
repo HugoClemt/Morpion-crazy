@@ -55,5 +55,5 @@ if (isset($_POST['pseudoSolo'])) {
     databaseWrite($req, $args);
 
     // Redirige l'utilisateur vers une autre page, par exemple, './../multi.php'
-    header('Location: ./../view/template/template-grille.php');
+    header('Location: ./../view/template/template-grilleSolo.php');
 }

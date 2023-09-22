@@ -95,3 +95,23 @@ function afficherResultat(resultat) {
   modal.show();
 }
 
+
+
+// Fonction pour réinitialiser la grille
+function reinitialiserGrille() {
+  // Réinitialisez la grilleDeJeu et les valeurs des cases ici
+  grilleDeJeu = ["", "", "", "", "", "", "", "", ""];
+  const cases = document.querySelectorAll('.case');
+  cases.forEach(caseElement => {
+    caseElement.value = "";
+    location.reload();
+  });
+
+  // Fermez la modal
+  const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  modal.hide();
+}
+
+// Ajoutez un gestionnaire d'événements au bouton "Revanche"
+const rejouerBtn = document.getElementById('rejouerBtn');
+rejouerBtn.addEventListener('click', reinitialiserGrille);

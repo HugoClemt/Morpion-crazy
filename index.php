@@ -21,6 +21,9 @@
     case 'template-grille':
       include './view/template/template-grille.php';
       break;
+    case 'template-grilleSolo':
+        include './view/template/template-grilleSolo.php';
+        break;
   }
 
   ?>
