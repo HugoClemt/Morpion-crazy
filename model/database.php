@@ -1,5 +1,6 @@
 <?php
-include_once __DIR__ . './../outils.php';
+// include_once __DIR__ . '/outils.php';
+
 
 // Fonction pour établir la connexion à la base de données
 function databaseConnect()
@@ -56,3 +57,4 @@ function databaseWrite($req, $args = [])
         exit();  // Quitte le script en cas d'erreur d'exécution de la requête
     }
 }
+

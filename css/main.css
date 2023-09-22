@@ -70,17 +70,6 @@
   border-top-right-radius: 10px;
   border: 0;
 }
-.modal-content .modal-body {
-  border-bottom-left-radius: 10px;
-  border: 0;
-  border-bottom-right-radius: 10px;
-}
-.modal-content .modal-body .btn.ferme {
-  margin-right: 15px;
-}
-.modal-content .modal-body .modal-btn {
-  margin-top: 15px;
-}
 .modal-content .modal-body .card {
   border: 0 !important;
   background-color: transparent !important;
@@ -91,6 +80,14 @@
   padding: 5px 10px;
   box-shadow: none;
   border: 2px solid #545454;
+}
+.modal-content .modal-footer {
+  border-bottom-left-radius: 10px;
+  border: 0;
+  border-bottom-right-radius: 10px;
+}
+.modal-content .modal-footer .btn.ferme {
+  margin-right: 15px;
 }
 
 .contain {
@@ -104,9 +101,6 @@
 }
 .contain #block-left-bottom #classement-liste {
   list-style: disclosure-closed;
-}
-.contain #title-mode {
-  margin-bottom: 30px;
 }
 
 .template-grille {
