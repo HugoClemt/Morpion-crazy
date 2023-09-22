@@ -32,15 +32,11 @@
             <div class="modal-body">
                 <form label="infoSolo" method="post" action="./model/add_pseudo.php">
                     <div class="card">
-<<<<<<< HEAD
-                        <input type="text" name="pseudoSolo" id="pseudoSolo" placeholder="Entrer votre pseudo" required="required">
-=======
                         <input type="text" name="pseudoMulti1" id="pseudoMulti1" placeholder="Entrer votre pseudo" required="required">
                         <div class="modal-btn">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                             <a href="?page=template-grille"><button type="submit" class="btn btn-primary">Jouer</button></a>
                         </div>
->>>>>>> julien
                     </div>
                 </form>
             </div>
